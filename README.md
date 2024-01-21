@@ -12,7 +12,7 @@ A Remote Code Execution (RCE) vulnerability has been discovered in the `com.heyt
 
 ### Vulnerability Details:
 
-- **Vulnerability Type:** Arbitrary JavaScript Code Execution
+- **Vulnerability Type:** JavaScript Code Execution
 - **Attack Vector:** Via an exported activity component
 - **Permissions Required:** None
 
