@@ -20,9 +20,6 @@ A Remote Code Execution (RCE) vulnerability has been discovered in the `com.heyt
 
 The `com.android.browser.RealBrowserActivity` activity in the `com.heytap.browser` app is exported and can be invoked by any third-party application without requiring any permissions. A malicious app can exploit this to execute arbitrary JavaScript code within the context of the `com.heytap.browser`` application.
 
-This vulnerability is particularly concerning because:
-- The victim does not need to grant any special permissions to any installed applications.
-- The attack can be initiated remotely.
 
 ### Proof of Concept (PoC):
 
@@ -44,7 +41,6 @@ This vulnerability is particularly concerning because:
 ```
 
 ```
-adb shell am start -a android.intent.action.VIEW -d "http://example.com" -n com.heytap.browser/com.android.browser.RealBrowserActivity
 
 adb shell am start -a android.intent.action.VIEW -d "javascript:alert%28%27Test%20Alert%27%29%3B" -n com.heytap.browser/com.android.browser.RealBrowserActivity
 
@@ -59,10 +55,5 @@ adb shell am start -a android.intent.action.VIEW -d "javascript:alert%28%27Test%
 
 Successful exploitation allows an attacker to:
 - Execute arbitrary JavaScript code within the context of the `com.heytap.browser` app.
-
-
-### Mitigation and Recommendations:
-
-1. **Restrict Activity Export:** Do not export activities unless necessary.
 
 
