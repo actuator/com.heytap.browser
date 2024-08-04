@@ -1,7 +1,7 @@
 ## Vulnerability Report
 
 ### Overview:
-A Remote Code Execution (RCE) vulnerability has been discovered in the `com.heytap.browser` application on the Android platform. The vulnerability allows an attacker to execute arbitrary JavsScript code within the context of the application without any permissions.
+A vulnerability has been discovered in the `com.heytap.browser` application on the Android platform. The vulnerability allows an attacker to execute arbitrary JavsScript code within the context of the application without any permissions.
 
 ### Application Details:
 
