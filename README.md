@@ -46,6 +46,7 @@ adb shell am start -a android.intent.action.VIEW -d "javascript:alert%28%27Test%
 
 ```
 
+![com heytap browser- 45 10 3 4 1-JS](https://github.com/user-attachments/assets/df6abee3-525e-45b0-8439-223707074010)
 ![poc-coloros](https://github.com/actuator/com.heytap.browser/assets/78701239/952f08c7-b8d6-4982-80bb-28b693b20134)
 
 
